@@ -1,0 +1,142 @@
+:root{
+    --TITLE-COLOR: #322153;
+    --PRIMARY-GREEN-COLOR: #34CB79;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu',sans-serif;
+    color: var(--TITLE-COLOR);
+}
+
+#homePage {
+    font-size : 1.4rem;
+    height: 100vh;
+
+    background: url("../../assets/home-background.svg") no-repeat;
+    background-position: 35vw 14vh;
+}
+
+#homePage .containerMainPage{
+    height: 100%;
+    width: 90%;
+    max-width: 110rem;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.containerMainPage header {
+    margin-top: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerMainPage header a {
+    display: flex;
+
+    color: var(--TITLE-COLOR);
+    font-weight: 700;
+}
+
+.containerMainPage header a span{
+    margin-right: 16px;
+    display: flex;
+
+    background: url('../../assets/log-in.svg');
+
+    width: 2rem;
+    height: 2rem;
+
+}
+
+#homePage main {
+    max-width: 56rem;
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#homePage main h1 {
+    font-size: 5.4rem;
+}
+
+#homePage main p {
+    font-size: 2.4rem;
+    line-height: 38px;
+    margin-top: 24px;
+}
+
+#homePage main a {
+    width: 100%;
+    max-width: 36rem;
+    height: 7.2rem;
+
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    margin-top: 40px;
+
+    background: var(--PRIMARY-GREEN-COLOR);
+
+    transition: 400ms;
+}
+
+#homePage main a:hover {
+    background-color: #2fb86e;
+}
+
+#homePage main a span {
+    width: 7.2rem;
+    height: 7.2rem;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    background-color: rgba(0,0,0,0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#homePage main a span::after {
+    content: "";
+    background: url('../../assets/search.svg');
+
+    width: 2rem;
+    height: 2rem;
+}
+
+#homePage main a strong {
+    flex: 1;
+    color: white;
+    text-align: center;
+}

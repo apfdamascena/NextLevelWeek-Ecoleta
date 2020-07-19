@@ -1,0 +1,22 @@
+@media (max-width: 900px){
+    #homePage {
+        background-position-x: 70vw;
+    }
+
+    #homePage .containerMainPage {
+        align-items: center;
+        text-align: center;
+    }
+
+    #homePage header a {
+        position: absolute;
+        bottom: 28px;
+        
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #homePage main{
+        align-items: center;
+    }
+}
