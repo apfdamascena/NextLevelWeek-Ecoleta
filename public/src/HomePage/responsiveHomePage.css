@@ -3,7 +3,7 @@
         background-position-x: 70vw;
     }
 
-    #homePage .containerMainPage {
+    #homePage .containerHomePage {
         align-items: center;
         text-align: center;
     }
@@ -25,11 +25,4 @@
     #homePage {
         background-position-x: 40vw;
     }
-}
-
-@media (max-height: 760px){
-    #homePage {
-        background-position-y: 200px;
-    }
-    
 }

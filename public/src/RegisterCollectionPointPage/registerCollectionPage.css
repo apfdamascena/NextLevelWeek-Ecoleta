@@ -1,0 +1,35 @@
+#collectionPointPage {
+    font-size: 1.4rem;
+
+    width: 90%;
+    height: 100%;
+    max-width: 110rem;
+
+    margin: 0 auto;
+}
+
+.containerCollectionPointPage header {
+    margin-top: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerCollectionPointPage header a {
+    display: flex;
+    align-items: center;
+
+    color: var(--TITLE-COLOR);
+    font-weight: 700;
+}
+
+.containerCollectionPointPage header a span{
+    margin-right: 16px;
+    display: flex;
+
+    background-image: url('../../assets/arrow-left.svg');
+
+    width: 2rem;
+    height: 2rem;
+}

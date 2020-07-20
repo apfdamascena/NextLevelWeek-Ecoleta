@@ -6,7 +6,7 @@
     background-position: 35vw 14vh;
 }
 
-#homePage .containerMainPage{
+#homePage .containerHomePage{
     height: 100%;
     width: 90%;
     max-width: 110rem;
@@ -17,7 +17,7 @@
     flex-direction: column;
 }
 
-.containerMainPage header {
+.containerHomePage header {
     margin-top: 28px;
 
     display: flex;
@@ -25,14 +25,14 @@
     justify-content: space-between;
 }
 
-.containerMainPage header a {
+.containerHomePage header a {
     display: flex;
 
     color: var(--TITLE-COLOR);
     font-weight: 700;
 }
 
-.containerMainPage header a span{
+.containerHomePage header a span{
     margin-right: 16px;
     display: flex;
 
