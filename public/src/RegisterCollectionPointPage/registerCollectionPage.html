@@ -20,6 +20,46 @@
 
             <form action="">
                 <h1>Cadastro do ponto de coleta</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Dados da entidade</h2>
+                    </legend>
+
+                    <div class="field">
+                        <label for="entityName">Nome da entidade</label>
+                        <input type="text" name = "entityName">
+                    </div>
+
+                    <div class="fieldGroup">
+                        <div class="field">
+                            <label for="entityAdress">Endereço</label>
+                            <input type="text" name = "entityAdress">
+                        </div>
+                        <div class="field">
+                            <label for="entityComplement">Número/Complemento</label>
+                            <input type="text" name = "entityComplement">
+                        </div>
+                    </div>
+
+                    <div class="fieldGroup">
+                        <div class="field">
+                            <label for="entityState">Estado</label>
+                            <select name="uf">
+                                <option value="">Selecione o Estado</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="entityCity">Cidade</label>
+                            <select name="city" disabled>
+                                <option value="">Selecione a Cidade</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button>Cadastrar ponto de coleta</button>
             </form>
         </div>
     </div>
