@@ -19,11 +19,14 @@ function getCity(event){
     const indexOfSelectedState = event.target.selectedIndex;
     showState.value = event.target.options[indexOfSelectedState].text;
 
+    citySelector.innerHTML = "<option value>Selecione a Cidade</option>";
+    citySelector.disabled = true;
+
     fetch(cityURL)
         .then( (dataCities) => { return dataCities.json()})
             .then( (cities) => {
                 for(const city of cities){
-                    citySelector.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
+                    citySelector.innerHTML += `<option value="${city.nome}">${city.nome}</option>`;
                 }
                 citySelector.disabled = false;
             }).catch((error) => {console.log(error);})

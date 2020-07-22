@@ -28,25 +28,25 @@
 
                     <div class="field">
                         <label for="entityName">Nome da entidade</label>
-                        <input type="text" name = "entityName">
+                        <input type="text" name = "entityName" required>
                     </div>
 
                     <div class="fieldGroup">
                         <div class="field">
                             <label for="entityAdress">Endereço</label>
-                            <input type="text" name = "entityAdress">
+                            <input type="text" name = "entityAdress" required>
                         </div>
                         
                         <div class="field">
                             <label for="entityComplement">Número/Complemento</label>
-                            <input type="text" name = "entityComplement">
+                            <input type="text" name = "entityComplement" required>
                         </div>
                     </div>
 
                     <div class="fieldGroup">
                         <div class="field">
                             <label for="entityState">Estado</label>
-                            <select name="uf">
+                            <select name="uf" required>
                                 <option value="">Selecione o Estado</option>
                             </select>
 
@@ -55,11 +55,17 @@
 
                         <div class="field">
                             <label for="entityCity">Cidade</label>
-                            <select name="city" disabled>
+                            <select name="city" disabled required>
                                 <option value="">Selecione a Cidade</option>
                             </select>
                         </div>
                     </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <h2>Ítens de coleta</h2>
+                    </legend>
                 </fieldset>
 
                 <button>Cadastrar ponto de coleta</button>
