@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Main/main.css">
     <link rel="stylesheet" href="homePage.css">
+    <link rel="stylesheet" href="modalPage.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
@@ -27,5 +28,24 @@
             </main>
         </div>
     </div>
+
+    <div id="modal" class="modalHidden">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <h1>Pontos de Coleta</h1>
+                <a href="">Fechar</a>
+            </div>
+            <form action="">
+                <label for="modalClickToSearch">Cidade</label>
+                <div class="search field">
+                    <input type="text" name = "modalClickToSearch" placeholder="Pesquisar por cidade">
+                    <button>
+                        <img src="../../assets/search.svg" alt="modal Search">
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="./homePage.js"></script>
 </body>
 </html>
