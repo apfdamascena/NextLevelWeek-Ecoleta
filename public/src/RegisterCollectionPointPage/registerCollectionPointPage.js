@@ -36,3 +36,8 @@ function getCity(event){
 
 document.querySelector("select[name=uf]")
     .addEventListener("change", getCity)
+
+
+
+//! items collect
+

@@ -145,4 +145,19 @@ form button:hover {
     align-items: center;
     justify-content: space-around;
 
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.itemsCollectionGrid li span {
+    color: var(--TITLE-COLOR);
+    font-weight: bold;
+}
+
+
+.itemsCollectionGrid li.itemCollectionSelected{
+    background: #e1faec;
+    border: 2px solid #34cb79;
+
 }
