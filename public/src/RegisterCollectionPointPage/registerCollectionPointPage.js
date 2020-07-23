@@ -41,3 +41,33 @@ document.querySelector("select[name=uf]")
 
 //! items collect
 
+let selectedItems = [];
+const collectedItems = document.querySelector("input[name=items]");
+
+function handleSelectedItem(event){
+    const itemReference = event.target;
+
+    itemReference.classList.toggle("itemCollectionSelected")
+    const itemId = itemReference.dataset.id;
+
+    const alreadySelected = selectedItems.findIndex( (item) => {
+        return (item === itemId);
+    })
+
+    if(alreadySelected >= 0){
+        const removeItem = selectedItems.filter( (item) => {
+            return item != itemId
+        })
+        selectedItems = removeItem;
+    } else {
+        selectedItems.push(itemId);
+    }
+
+    collectedItems.value = selectedItems;
+
+}
+
+const itemsCollectionGrid = document.querySelectorAll(".itemsCollectionGrid li");
+for(const itemSelected of itemsCollectionGrid){
+    itemSelected.addEventListener("click", handleSelectedItem)
+}                                           
